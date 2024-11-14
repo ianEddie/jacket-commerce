@@ -1,0 +1,31 @@
+---
+import ViewIcon from '../icons/view-icon.astro';
+import NoViewIcon from '../icons/no-view-icon.astro';
+
+const { image, imageFront } = Astro.props;
+---
+
+<picture
+  class='relative bg-stone-100/80 overflow-hidden group h-[300px] flex justify-center items-center border-b-2 border-stone-800'
+>
+  <img
+    src={image.src}
+    alt=''
+    class='absolute size-full group-hover:opacity-0 group-hover:-translate-y-[70%] transition-all duration-500'
+  />
+  <img
+    src={imageFront.src}
+    alt=''
+    class='absolute size-full opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-[100%] group-hover:translate-y-0'
+  />
+  <div
+    class='absolute top-1 right-2 group flex justify-center items-center text-blue-800'
+  >
+    <ViewIcon
+      class='absolute transition-opacity duration-300 ease-in-out opacity-100 group-hover:opacity-0'
+    />
+    <NoViewIcon
+      class='transition-opacity duration-300 ease-in-out opacity-0 group-hover:opacity-100'
+    />
+  </div>
+</picture>

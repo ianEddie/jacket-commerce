@@ -1,0 +1,22 @@
+<div></div>
+<style>
+  :root {
+    --line-color: #a1a1aa;
+    --bg-color: #f4f4f5;
+  }
+  div {
+    position: absolute;
+    inset: 0;
+    z-index: -10;
+    height: 100%;
+    width: 100%;
+    background-color: var(--bg-color);
+    background-image: linear-gradient(
+        to right,
+        var(--line-color) 1px,
+        transparent 1px
+      ),
+      linear-gradient(to bottom, var(--line-color) 1px, transparent 1px);
+    background-size: 25px 25px;
+  }
+</style>

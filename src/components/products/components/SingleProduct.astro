@@ -1,0 +1,31 @@
+---
+import ProductImage from './ProductImage.astro';
+
+const { name, image, price, imageFront, slug } = Astro.props;
+---
+
+<a
+  href=`/product/${slug}`
+  class='flex flex-col border-2 border-stone-800 shadow-custom font-primary'
+>
+  <!-- Image -->
+  <ProductImage
+    image={image}
+    imageFront={imageFront}
+  />
+  <!-- Product Info -->
+  <article
+    class='w-full flex justify-between p-2 border-b border-stone-400 bg-stone-50'
+  >
+    <h3 class='font-semibold'>{name}</h3>
+    <h4 class='font-medium'>
+      <span class='text-green-700'>$</span>
+      <span>{price}</span>
+    </h4>
+  </article>
+  <article
+    class='p-2 text-sm bg-stone-50 text-stone-600 flex justify-between items-center'
+  >
+    <span>A short description</span>
+  </article>
+</a>

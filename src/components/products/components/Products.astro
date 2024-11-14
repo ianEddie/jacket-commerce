@@ -1,0 +1,11 @@
+---
+import { PRODUCTS } from '../data/products-data';
+import SingleProduct from './SingleProduct.astro';
+---
+
+<section class='min-h-screen flex flex-col gap-10 px-20'>
+  <h2>Products</h2>
+  <div class='grid grid-cols-[repeat(auto-fill,minmax(250px,1fr))] gap-10'>
+    {PRODUCTS.map((product) => <SingleProduct {...product} />)}
+  </div>
+</section>
