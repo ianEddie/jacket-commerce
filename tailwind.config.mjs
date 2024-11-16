@@ -10,6 +10,7 @@ export default {
         custom: '7px 7px 3px rgba(12, 10, 9, 0.5)'
       },
       fontFamily: {
+        title: ['Panchang-Variable'],
         primary: ['ClashDisplay-Variable']
       }
     }

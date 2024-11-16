@@ -11,6 +11,7 @@ import grayJacket from '../assets/gray-jacket.webp';
 import grayJacketFront from '../assets/gray-jacket-front.webp';
 import grayJacketBack from '../assets/gray-jacket-back.webp';
 
+
 export const PRODUCTS = [
   {
     id: '01',
@@ -21,7 +22,13 @@ export const PRODUCTS = [
     imageFront: blackJacketFront,
     imageBack: blackJacketBack,
     quantity: 10,
-    price: 100
+    price: 100,
+    origin: 'Japan',
+    colors: [
+      { name: 'Black', hex: '#181818' },
+      { name: 'Slate', hex: '#CBD5E1' },
+      { name: 'Red', hex: '#D70918' }
+    ]
   },
   {
     id: '02',
@@ -32,7 +39,13 @@ export const PRODUCTS = [
     imageFront: blueJacketFront,
     imageBack: blueJacketBack,
     quantity: 10,
-    price: 130
+    price: 130,
+    origin: 'England',
+    colors: [
+      { name: 'Blue', hex: '#003ABD' },
+      { name: 'Amber', hex: '#FCA702' },
+      { name: 'Red', hex: '#D70918' }
+    ]
   },
   {
     id: '03',
@@ -43,7 +56,13 @@ export const PRODUCTS = [
     imageFront: redJacketFront,
     imageBack: redJacketBack,
     quantity: 10,
-    price: 90
+    price: 90,
+    origin: 'Spain',
+    colors: [
+      { name: 'Red', hex: '#601417' },
+      { name: 'Violet', hex: '#77145F' },
+      { name: 'Yellow', hex: '#FACC15' }
+    ]
   },
   {
     id: '04',
@@ -54,6 +73,12 @@ export const PRODUCTS = [
     imageFront: grayJacketFront,
     imageBack: grayJacketBack,
     quantity: 10,
-    price: 120
+    price: 120,
+    origin: 'USA',
+    colors: [
+      { name: 'Gray', hex: '#1B3644' },
+      { name: 'Orange', hex: '#FA4902' },
+      { name: 'Cyan', hex: '#0A9BDA' }
+    ]
   }
 ];

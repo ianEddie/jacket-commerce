@@ -1,6 +1,7 @@
 ---
 import ViewIcon from '../icons/view-icon.astro';
 import NoViewIcon from '../icons/no-view-icon.astro';
+import { Image } from 'astro:assets';
 
 const { image, imageFront } = Astro.props;
 ---
@@ -8,13 +9,13 @@ const { image, imageFront } = Astro.props;
 <picture
   class='relative bg-stone-100/80 overflow-hidden group h-[300px] flex justify-center items-center border-b-2 border-stone-800'
 >
-  <img
-    src={image.src}
+  <Image
+    src={image}
     alt=''
     class='absolute size-full group-hover:opacity-0 group-hover:-translate-y-[70%] transition-all duration-500'
   />
-  <img
-    src={imageFront.src}
+  <Image
+    src={imageFront}
     alt=''
     class='absolute size-full opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-[100%] group-hover:translate-y-0'
   />

@@ -1,0 +1,24 @@
+---
+import ProductHeader from '../page/ProductHeader.astro';
+import ProductFooter from '../page/ProductFooter.astro';
+import ProductPicture from '../page/ProductPicture.astro';
+
+const { name, imageFront, imageBack, origin, colors, price } = Astro.props;
+---
+
+<section class='h-screen w-full flex justify-center items-center'>
+  <article
+    class='font-primary flex flex-col relative h-[80%] w-[60%] z-10 border-2 border-stone-800 bg-zinc-100'
+  >
+    <ProductHeader
+      name={name}
+      origin={origin}
+      colors={colors}
+    />
+    <ProductPicture
+      imageFront={imageFront}
+      imageBack={imageBack}
+    />
+    <ProductFooter price={price} />
+  </article>
+</section>

@@ -1,0 +1,64 @@
+---
+const { name, origin, colors} = Astro.props;
+---
+
+<header class='w-full flex flex-col flex-grow'>
+  <article class='w-full flex flex-grow'>
+    <span
+      class='w-[20%] border-b border-stone-800 flex justify-center items-center font-title font-semibold'
+      >WLD</span
+    >
+    <table class='flex-grow grid grid-cols-2 border-b border-stone-800'>
+      <tbody class='border-x border-stone-800'>
+        <tr class='border-b border-stone-800'>
+          <th>name</th>
+          <td>{name}</td>
+        </tr>
+        <tr>
+          <th>origin</th>
+          <td >
+            {origin}
+    
+          </td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr class='border-b border-stone-800'>
+          <th>colors</th>
+          <td class='flex gap-2'>
+            {
+              colors.map((color: { hex: string }) => (
+                <span
+                  style={{ backgroundColor: color.hex }}
+                  class='size-4 text-transparent rounded-full'
+                >
+                  .
+                </span>
+              ))
+            }
+          </td>
+        </tr>
+        <tr>
+          <th>name</th>
+          <td>test</td>
+        </tr>
+      </tbody>
+    </table>
+  </article>
+  <footer
+    class='flex justify-center items-center py-[5px] text-sm border-b border-stone-800'
+  >
+    Front & Back
+  </footer>
+</header>
+<style>
+  tbody {
+    @apply w-full flex flex-col;
+    tr {
+      @apply flex justify-between items-center px-4 py-1;
+    }
+    td {
+      @apply text-sm;
+    }
+  }
+</style>

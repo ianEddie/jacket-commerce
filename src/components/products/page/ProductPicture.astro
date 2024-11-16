@@ -1,0 +1,23 @@
+---
+import Background from '@components/UI/Background.astro';
+import { Image } from 'astro:assets';
+
+const { imageFront, imageBack } = Astro.props;
+const alt = 'Product Image';
+---
+
+<picture
+  class='relative h-[70%] flex justify-center overflow-hidden m-3 border-2 border-stone-800 bg-gradient-to-b from-zinc-100/90 via-zinc-100/80 to-zinc-100/40'
+>
+  <Background />
+  <Image
+    src={imageFront}
+    alt={alt}
+    class='h-full w-auto -translate-y-7'
+  />
+  <Image
+    src={imageBack}
+    alt={alt}
+    class='h-full w-auto translate-y-7'
+  />
+</picture>

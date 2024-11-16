@@ -1,0 +1,15 @@
+---
+import AddToCart from '@components/cart/components/AddToCart';
+
+const { price } = Astro.props;
+---
+
+<footer
+  class='py-2 px-4 flex items-center justify-between border-t border-stone-800'
+>
+  <AddToCart />
+  <span class='flex items-center gap-1'>
+    <strong class='text-green-600'>$</strong>
+    <strong class='text-[18px] tracking-wide'>{price} </strong>
+  </span>
+</footer>
