@@ -1,5 +1,5 @@
 ---
-import AddToCart from '@components/cart/components/AddToCart';
+import AddToCart from '@components/cart/components/AddToCart.astro';
 
 const { price } = Astro.props;
 ---
@@ -10,6 +10,6 @@ const { price } = Astro.props;
   <AddToCart />
   <span class='flex items-center gap-1'>
     <strong class='text-green-600'>$</strong>
-    <strong class='text-[18px] tracking-wide'>{price} </strong>
+    <strong class='text-[18px] tracking-wide'>{price}</strong>
   </span>
 </footer>

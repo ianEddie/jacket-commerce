@@ -1,12 +1,8 @@
 ---
-import CartCheckout from '@cart/components/CartCheckout.astro';
-import CartProducts from '@cart/components/CartProducts.astro';
+import Cart from '@components/cart/components/Cart.astro';
 import Layout from '@layouts/Layout.astro';
 ---
 
 <Layout title='Cart'>
-  <section class='h-screen p-10 gap-10 flex justify-center items-center'>
-    <CartProducts />
-    <CartCheckout />
-  </section>
+  <Cart />
 </Layout>
