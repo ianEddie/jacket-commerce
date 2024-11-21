@@ -3,7 +3,8 @@ import ProductHeader from '../page/ProductHeader.astro';
 import ProductFooter from '../page/ProductFooter.astro';
 import ProductPicture from '../page/ProductPicture.astro';
 
-const { name, imageFront, imageBack, origin, colors, price } = Astro.props;
+const { product } = Astro.props;
+const { name, imageFront, imageBack, origin, colors, price } = product;
 ---
 
 <section class='h-screen w-full flex justify-center items-center'>
@@ -19,6 +20,6 @@ const { name, imageFront, imageBack, origin, colors, price } = Astro.props;
       imageFront={imageFront}
       imageBack={imageBack}
     />
-    <ProductFooter price={price} />
+    <ProductFooter product={product} />
   </article>
 </section>

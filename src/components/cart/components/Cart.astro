@@ -1,10 +1,9 @@
 ---
 import CartCheckout from './CartCheckout.astro';
-import CartProducts from './CartProducts.astro';
-
+import CartProducts from './CartProducts';
 ---
 
 <main class='h-screen p-10 gap-10 flex justify-center items-center'>
-  <CartProducts />
+  <CartProducts client:load />
   <CartCheckout />
 </main>

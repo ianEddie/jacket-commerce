@@ -1,3 +1,5 @@
+import type { ImageMetadata } from 'astro';
+
 export type productId = string;
 
 export type Color = {
@@ -10,10 +12,10 @@ export interface Product {
   name: string;
   slug: string;
   description: string;
-  image: string;
-  imageFront: string;
-  imageBack: string;
-  quantity: number;
+  image: ImageMetadata | any;
+  imageFront: ImageMetadata | any;
+  imageBack: ImageMetadata | any;
+  stock: number;
   price: number;
   origin: string;
   colors: Color[];

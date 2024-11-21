@@ -10,9 +10,9 @@ import blueJacketBack from '../assets/blue-jacket-back.webp';
 import grayJacket from '../assets/gray-jacket.webp';
 import grayJacketFront from '../assets/gray-jacket-front.webp';
 import grayJacketBack from '../assets/gray-jacket-back.webp';
+import type { Products } from '../types';
 
-
-export const PRODUCTS = [
+export const PRODUCTS: Products = [
   {
     id: '01',
     name: 'Black Jacket',
@@ -21,7 +21,7 @@ export const PRODUCTS = [
     image: blackJacket,
     imageFront: blackJacketFront,
     imageBack: blackJacketBack,
-    quantity: 10,
+    stock: 10,
     price: 100,
     origin: 'Japan',
     colors: [
@@ -38,7 +38,7 @@ export const PRODUCTS = [
     image: blueJacket,
     imageFront: blueJacketFront,
     imageBack: blueJacketBack,
-    quantity: 10,
+    stock: 10,
     price: 130,
     origin: 'England',
     colors: [
@@ -55,7 +55,7 @@ export const PRODUCTS = [
     image: redJacket,
     imageFront: redJacketFront,
     imageBack: redJacketBack,
-    quantity: 10,
+    stock: 10,
     price: 90,
     origin: 'Spain',
     colors: [
@@ -72,7 +72,7 @@ export const PRODUCTS = [
     image: grayJacket,
     imageFront: grayJacketFront,
     imageBack: grayJacketBack,
-    quantity: 10,
+    stock: 10,
     price: 120,
     origin: 'USA',
     colors: [
