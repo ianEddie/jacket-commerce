@@ -21,8 +21,8 @@ export const PRODUCTS: Products = [
     image: blackJacket,
     imageFront: blackJacketFront,
     imageBack: blackJacketBack,
-    stock: 10,
     price: 100,
+    quantity: 0,
     origin: 'Japan',
     colors: [
       { name: 'Black', hex: '#181818' },
@@ -38,8 +38,8 @@ export const PRODUCTS: Products = [
     image: blueJacket,
     imageFront: blueJacketFront,
     imageBack: blueJacketBack,
-    stock: 10,
     price: 130,
+    quantity: 0,
     origin: 'England',
     colors: [
       { name: 'Blue', hex: '#003ABD' },
@@ -55,8 +55,8 @@ export const PRODUCTS: Products = [
     image: redJacket,
     imageFront: redJacketFront,
     imageBack: redJacketBack,
-    stock: 10,
     price: 90,
+    quantity: 0,
     origin: 'Spain',
     colors: [
       { name: 'Red', hex: '#601417' },
@@ -72,8 +72,8 @@ export const PRODUCTS: Products = [
     image: grayJacket,
     imageFront: grayJacketFront,
     imageBack: grayJacketBack,
-    stock: 10,
     price: 120,
+    quantity: 0,
     origin: 'USA',
     colors: [
       { name: 'Gray', hex: '#1B3644' },

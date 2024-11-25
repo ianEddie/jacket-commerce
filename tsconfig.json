@@ -3,18 +3,10 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@components/*": [
-        "src/components/*"
-      ],
-      "@layouts/*": [
-        "src/layouts/*"
-      ],
-      "@cart/*": [
-        "src/components/cart/*"
-      ],
-      "@products/*": [
-        "src/components/products/*"
-      ],
+      "@components/*": ["src/components/*"],
+      "@layouts/*": ["src/layouts/*"],
+      "@cart/*": ["src/components/cart/*"],
+      "@products/*": ["src/components/products/*"]
     },
     "jsx": "react-jsx",
     "jsxImportSource": "react"

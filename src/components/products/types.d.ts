@@ -15,8 +15,8 @@ export interface Product {
   image: ImageMetadata | any;
   imageFront: ImageMetadata | any;
   imageBack: ImageMetadata | any;
-  stock: number;
   price: number;
+  quantity: number;
   origin: string;
   colors: Color[];
 }

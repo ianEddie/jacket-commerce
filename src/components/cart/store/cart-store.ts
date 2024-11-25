@@ -7,6 +7,8 @@ interface CartStore {
   addToCart: (product: Product) => void;
   removeFromCart: (id: productId) => void;
   clearCart: () => void;
+  increaseQuantity: (id: productId) => void;
+  decreaseQuantity: (id: productId) => void;
 }
 const storeApi: StateCreator<CartStore> = (set) => ({
   cart: [],
@@ -25,6 +27,27 @@ const storeApi: StateCreator<CartStore> = (set) => ({
   // CLEAR CART
   clearCart: () => {
     set({ cart: [] });
+  },
+  // IMCREASE QUANTITY
+  increaseQuantity: (id: productId) => {
+    set((state) => ({
+      cart: state.cart.map((product) =>
+        product.id === id
+          ? { ...product, quantity: product.quantity + 1 }
+          : product
+      )
+    }));
+  },
+
+  // DECREASE QUANTITY
+  decreaseQuantity: (id: productId) => {
+    set((state) => ({
+      cart: state.cart.map((product) =>
+        product.id === id && product.quantity > 1
+          ? { ...product, quantity: product.quantity - 1 }
+          : product
+      )
+    }));
   }
 });
 

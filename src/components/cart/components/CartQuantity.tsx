@@ -1,17 +1,18 @@
-import LessIcon from '../icons/less-icon.tsx';
-import MoreIcon from '../icons/more-icon.tsx';
-import QuantityButton from './QuantityButton';
+import type { productId } from '@components/products/types.js';
+import DecrementButton from './DecrementButton.tsx';
+import IncrementButton from './IncrementButton.tsx';
 
-export default function CartQuantity() {
+interface Props {
+  id: productId;
+  quantity: number;
+}
+
+export default function CartQuantity({ id, quantity }: Props) {
   return (
     <div className='flex gap-4 justify-center items-center'>
-      <QuantityButton>
-        <LessIcon />
-      </QuantityButton>
-      <strong>1</strong>
-      <QuantityButton>
-        <MoreIcon />
-      </QuantityButton>
+      <DecrementButton id={id} />
+      <strong>{quantity}</strong>
+      <IncrementButton id={id} />
     </div>
   );
 }
