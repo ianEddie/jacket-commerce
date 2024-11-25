@@ -6,7 +6,10 @@
       "@components/*": ["src/components/*"],
       "@layouts/*": ["src/layouts/*"],
       "@cart/*": ["src/components/cart/*"],
-      "@products/*": ["src/components/products/*"]
+      "@products/*": ["src/components/products/*"],
+      "@header/*": ["src/components/header/*"],
+      "@hero/*": ["src/components/hero/*"]
+
     },
     "jsx": "react-jsx",
     "jsxImportSource": "react"

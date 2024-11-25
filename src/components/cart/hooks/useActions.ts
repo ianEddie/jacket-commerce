@@ -1,5 +1,6 @@
 import type { Product, productId } from '@components/products/types';
 import { useCartStore } from '../store/cart-store';
+import { useEffect, useState } from 'react';
 
 export function useActions() {
   const {
@@ -9,6 +10,13 @@ export function useActions() {
     increaseQuantity,
     decreaseQuantity
   } = useCartStore();
+  // STATE FOR CREATE A RANDOM VALUE TO SHIPPING
+  const [shippingValue, setShippingValue] = useState<number>(0);
+  // RENDERING ONLY ONE TIME DE VALUE
+  useEffect(() => {
+    const value = Math.floor(Math.random() * (30 - 10 + 1)) + 10;
+    setShippingValue(value);
+  }, []);
   // ADD PRODUCT TO CART
   const handleAddToCart = (product: Product) => {
     addToCart(product);
@@ -40,11 +48,18 @@ export function useActions() {
       0
     );
   };
-  // GET A RANDOM NUMBER TO SHIPPING VALUE
-  const getShippingValue = () => {
-    return Math.floor(Math.random() * (30 - 10 + 1)) + 10;
+  // GET TOTAL PRICE OF CART INCLUDING SHIPPING VALUE
+  const getCartTotalPrice = () => {
+    const subTotal = getCartSubTotalPrice();
+    const totalPrice = subTotal + shippingValue;
+    return {
+      subTotal,
+      shippingValue,
+      totalPrice
+    };
   };
-
+  // GET CART LEGTH
+  const cartValue = cart.length;
   // RETURN THE ACTIONS
   return {
     handleAddToCart,
@@ -54,6 +69,8 @@ export function useActions() {
     handleDecrement,
     getSubTotalPrice,
     getCartSubTotalPrice,
-    getShippingValue
+    getCartTotalPrice,
+    cartValue,
+    cart
   };
 }

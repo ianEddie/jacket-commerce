@@ -1,6 +1,6 @@
 import Price from '@components/UI/Price';
 import DeleteButton from './DeleteButton';
-import type { Product, productId } from '@components/products/types';
+import type { productId } from '@components/products/types';
 import CartQuantity from './CartQuantity';
 import { useActions } from '../hooks/useActions';
 

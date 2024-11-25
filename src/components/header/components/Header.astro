@@ -1,0 +1,19 @@
+---
+import CartIcon from '../icons/cart-icon.astro';
+import CartValue from './CartValue';
+---
+
+<header
+  class='w-full h-10 bg-green-300 flex justify-between py-px px-10 fixed font-primary'
+>
+  <strong class='self-center'>Logo</strong>
+  <nav>
+    <a
+      href='/cart'
+      class='flex h-full gap-1'
+    >
+      <CartIcon />
+      <CartValue client:load />
+    </a>
+  </nav>
+</header>
