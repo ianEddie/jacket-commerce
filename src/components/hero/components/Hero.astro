@@ -1,10 +1,23 @@
 ---
-
+import ShineIcon from '../icons/shine-icon.astro';
 ---
 
-<section class='h-screen flex justify-center items-center'>
-  <h1 class='flex justify-center relative'>
-    <span class='font-primary text-[10rem]'>The Wild</span>
-    <span class='font-logo text-[8rem] absolute -bottom-20'>Jackets</span>
+<section
+  class='relative h-[80dvh] flex flex-col justify-center items-center gap-y-5 font-primary'
+>
+  <h1 class='relative flex justify-center items-center'>
+    <b class='text-[9rem] z-10 text-yellow-300'>THE MAD</b>
+    <span class='absolute font-logo text-[16rem] z-0 -translate-x-4 text-black'
+      >JACKETS</span
+    >
   </h1>
+  <article class='flex gap-2 items-center'>
+    <ShineIcon class='rotate-180' />
+    <h2
+      class='text-[1.5rem] backdrop-blur-lg px-4 py-2 bg-gradient-to-r from-yellow-300/20 to-white'
+    >
+      2024 collection now available
+    </h2>
+    <ShineIcon />
+  </article>
 </section>

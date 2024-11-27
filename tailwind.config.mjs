@@ -13,7 +13,7 @@ export default {
       fontFamily: {
         title: ['Panchang-Variable'],
         primary: ['ClashDisplay-Variable'],
-        logo: ['FankyBubbleGraffiti-Line']
+        logo: ['FankyBubbleGraffiti-Regular']
       }
     }
   },
