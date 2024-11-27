@@ -8,7 +8,8 @@ export function useActions() {
     cart,
     removeFromCart,
     increaseQuantity,
-    decreaseQuantity
+    decreaseQuantity,
+    clearCart
   } = useCartStore();
   // STATE FOR CREATE A RANDOM VALUE TO SHIPPING
   const [shippingValue, setShippingValue] = useState<number>(0);
@@ -71,6 +72,7 @@ export function useActions() {
     getCartSubTotalPrice,
     getCartTotalPrice,
     cartValue,
-    cart
+    cart,
+    clearCart
   };
 }

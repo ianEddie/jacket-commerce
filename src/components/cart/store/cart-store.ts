@@ -38,7 +38,6 @@ const storeApi: StateCreator<CartStore> = (set) => ({
       )
     }));
   },
-
   // DECREASE QUANTITY
   decreaseQuantity: (id: productId) => {
     set((state) => ({

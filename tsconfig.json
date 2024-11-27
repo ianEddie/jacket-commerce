@@ -8,8 +8,8 @@
       "@cart/*": ["src/components/cart/*"],
       "@products/*": ["src/components/products/*"],
       "@header/*": ["src/components/header/*"],
-      "@hero/*": ["src/components/hero/*"]
-
+      "@hero/*": ["src/components/hero/*"],
+      "@checkout/*": ["src/components/checkout/*"]
     },
     "jsx": "react-jsx",
     "jsxImportSource": "react"

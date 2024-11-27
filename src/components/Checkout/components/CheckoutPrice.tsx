@@ -1,5 +1,6 @@
 import Price from '@components/UI/Price';
-import { useActions } from '../hooks/useActions';
+import { useActions } from '@cart/hooks/useActions';
+import CheckoutButton from './CheckoutButton';
 
 export default function CartCheckoutPrice() {
   const { getCartTotalPrice } = useActions();
@@ -18,9 +19,7 @@ export default function CartCheckoutPrice() {
         <span className='font-semibold'>Total</span>
         <Price>{totalPrice}</Price>
       </h4>
-      <button className='bg-yellow-400 py-1 font-bold border-2 border-stone-800'>
-        Checkout
-      </button>
+      <CheckoutButton />
     </article>
   );
 }

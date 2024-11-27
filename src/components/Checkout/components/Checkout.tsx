@@ -1,5 +1,5 @@
-import CartCheckoutInfo from './CartCheckoutInfo';
-import CartCheckoutPrice from './CartCheckoutPrice';
+import CartCheckoutInfo from './CheckoutInfo';
+import CartCheckoutPrice from './CheckoutPrice';
 
 export default function CartCheckout() {
   return (
