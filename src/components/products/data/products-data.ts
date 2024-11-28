@@ -1,16 +1,5 @@
-import blackJacket from '../assets/black-jacket.webp';
-import blackJacketFront from '../assets/black-jacket-front.webp';
-import blackJacketBack from '../assets/black-jacket-back.webp';
-import redJacket from '../assets/red-jacket.webp';
-import redJacketFront from '../assets/red-jacket-front.webp';
-import redJacketBack from '../assets/red-jacket-back.webp';
-import blueJacket from '../assets/blue-jacket.webp';
-import blueJacketFront from '../assets/blue-jacket-front.webp';
-import blueJacketBack from '../assets/blue-jacket-back.webp';
-import grayJacket from '../assets/gray-jacket.webp';
-import grayJacketFront from '../assets/gray-jacket-front.webp';
-import grayJacketBack from '../assets/gray-jacket-back.webp';
 import type { Products } from '../types';
+import { images } from './jacket-images';
 
 export const PRODUCTS: Products = [
   {
@@ -18,9 +7,9 @@ export const PRODUCTS: Products = [
     name: 'Black Jacket',
     slug: 'black-jacket',
     description: 'description',
-    image: blackJacket,
-    imageFront: blackJacketFront,
-    imageBack: blackJacketBack,
+    image: images.blackJacket,
+    imageFront: images.blackJacketFront,
+    imageBack: images.blackJacketBack,
     price: 100,
     quantity: 0,
     origin: 'Japan',
@@ -35,9 +24,9 @@ export const PRODUCTS: Products = [
     name: 'Blue Jacket',
     slug: 'blue-jacket',
     description: 'description',
-    image: blueJacket,
-    imageFront: blueJacketFront,
-    imageBack: blueJacketBack,
+    image: images.blueJacket,
+    imageFront: images.blueJacketFront,
+    imageBack: images.blueJacketBack,
     price: 130,
     quantity: 0,
     origin: 'England',
@@ -49,19 +38,19 @@ export const PRODUCTS: Products = [
   },
   {
     id: '03',
-    name: 'Red Jacket',
-    slug: 'red-jacket',
+    name: 'Purple Jacket',
+    slug: 'purple-jacket',
     description: 'description',
-    image: redJacket,
-    imageFront: redJacketFront,
-    imageBack: redJacketBack,
-    price: 90,
+    image: images.purpleJacket,
+    imageFront: images.purpleJacketFront,
+    imageBack: images.purpleJacketBack,
+    price: 120,
     quantity: 0,
-    origin: 'Spain',
+    origin: 'Denmark',
     colors: [
-      { name: 'Red', hex: '#601417' },
-      { name: 'Violet', hex: '#77145F' },
-      { name: 'Yellow', hex: '#FACC15' }
+      { name: 'Gray', hex: '#1B3644' },
+      { name: 'Orange', hex: '#FA4902' },
+      { name: 'Cyan', hex: '#0A9BDA' }
     ]
   },
   {
@@ -69,9 +58,9 @@ export const PRODUCTS: Products = [
     name: 'Gray Jacket',
     slug: 'gray-jacket',
     description: 'description',
-    image: grayJacket,
-    imageFront: grayJacketFront,
-    imageBack: grayJacketBack,
+    image: images.grayJacket,
+    imageFront: images.grayJacketFront,
+    imageBack: images.grayJacketBack,
     price: 120,
     quantity: 0,
     origin: 'USA',
@@ -79,6 +68,74 @@ export const PRODUCTS: Products = [
       { name: 'Gray', hex: '#1B3644' },
       { name: 'Orange', hex: '#FA4902' },
       { name: 'Cyan', hex: '#0A9BDA' }
+    ]
+  },
+  {
+    id: '05',
+    name: 'BlueGray Jacket',
+    slug: 'bluegray-jacket',
+    description: 'description',
+    image: images.bluegrayJacket,
+    imageFront: images.bluegrayJacketFront,
+    imageBack: images.bluegrayJacketBack,
+    price: 120,
+    quantity: 0,
+    origin: 'USA',
+    colors: [
+      { name: 'Gray', hex: '#1B3644' },
+      { name: 'Orange', hex: '#FA4902' },
+      { name: 'Cyan', hex: '#0A9BDA' }
+    ]
+  },
+  {
+    id: '06',
+    name: 'Stone Jacket',
+    slug: 'stone-jacket',
+    description: 'description',
+    image: images.stoneJacket,
+    imageFront: images.stoneJacketFront,
+    imageBack: images.stoneJacketBack,
+    price: 120,
+    quantity: 0,
+    origin: 'Canada',
+    colors: [
+      { name: 'Gray', hex: '#1B3644' },
+      { name: 'Orange', hex: '#FA4902' },
+      { name: 'Cyan', hex: '#0A9BDA' }
+    ]
+  },
+  {
+    id: '07',
+    name: 'StoneCold Jacket',
+    slug: 'stonecold-jacket',
+    description: 'description',
+    image: images.stonecoldJacket,
+    imageFront: images.stonecoldJacketFront,
+    imageBack: images.stonecoldJacketBack,
+    price: 90,
+    quantity: 0,
+    origin: 'NYC',
+    colors: [
+      { name: 'Red', hex: '#601417' },
+      { name: 'Violet', hex: '#77145F' },
+      { name: 'Yellow', hex: '#FACC15' }
+    ]
+  },
+  {
+    id: '08',
+    name: 'Red Jacket',
+    slug: 'red-jacket',
+    description: 'description',
+    image: images.redJacket,
+    imageFront: images.redJacketFront,
+    imageBack: images.redJacketBack,
+    price: 90,
+    quantity: 0,
+    origin: 'Spain',
+    colors: [
+      { name: 'Red', hex: '#601417' },
+      { name: 'Violet', hex: '#77145F' },
+      { name: 'Yellow', hex: '#FACC15' }
     ]
   }
 ];
