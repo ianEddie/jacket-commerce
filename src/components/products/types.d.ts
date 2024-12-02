@@ -19,6 +19,7 @@ export interface Product {
   quantity: number;
   origin: string;
   colors: Color[];
+  size: string
 }
 
 export type Products = Product[];

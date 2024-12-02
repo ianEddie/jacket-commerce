@@ -1,6 +1,7 @@
 import type { productId } from '@components/products/types.js';
 import DecrementButton from './DecrementButton.tsx';
 import IncrementButton from './IncrementButton.tsx';
+import NumberFlow from '@number-flow/react';
 
 interface Props {
   id: productId;
@@ -9,9 +10,12 @@ interface Props {
 
 export default function CartQuantity({ id, quantity }: Props) {
   return (
-    <div className='flex gap-4 justify-center items-center'>
+    <div className='flex lg:gap-4 gap-2 justify-center items-center'>
       <DecrementButton id={id} />
-      <strong>{quantity}</strong>
+      <NumberFlow
+        value={quantity}
+        className='font-semibold lg:text-base text-sm'
+      />
       <IncrementButton id={id} />
     </div>
   );

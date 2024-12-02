@@ -4,6 +4,7 @@ export default function MoreIcon() {
       xmlns='http://www.w3.org/2000/svg'
       width='16'
       height='16'
+      className='lg:size-[16px] size-[10px]'
       viewBox='0 0 24 24'
     >
       <path

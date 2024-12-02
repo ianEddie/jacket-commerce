@@ -12,7 +12,7 @@ export default function DecrementButton({ id }: Props) {
   return (
     <button
       onClick={() => handleDecrement(id)}
-      className='bg-yellow-200 p-1  border border-stone-800 rounded-full flex items-center justify-center'
+      className='bg-yellow-200 p-1 border border-stone-800 rounded-full flex items-center justify-center'
     >
       <LessIcon />
     </button>

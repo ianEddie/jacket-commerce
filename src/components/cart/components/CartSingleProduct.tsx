@@ -1,4 +1,4 @@
-import Price from '@components/UI/Price';
+import Price from '@ui/Price';
 import DeleteButton from './DeleteButton';
 import type { productId } from '@components/products/types';
 import CartQuantity from './CartQuantity';
@@ -23,16 +23,16 @@ export default function CartSingleProduct({
   const subTotal = getSubTotalPrice(price, quantity);
 
   return (
-    <article className='border border-stone-800 px-2 bg-zinc-50 grid grid-cols-5'>
+    <article className='relative border border-stone-800 px-2 bg-zinc-50 grid lg:grid-cols-5 grid-cols-4'>
       <picture className='flex justify-center items-center'>
         <img
           src={imageFront.src}
-          className='size-[7.2em]'
+          className='lg:size-[7.2em] size-[5.5em]'
           loading='lazy'
         />
       </picture>
       <div className='flex justify-center items-center'>
-        <h3>{name}</h3>
+        <h3 className='lg:text-base text-[12px] text-center'>{name}</h3>
       </div>
       <div className='flex justify-center items-center'>
         <CartQuantity
@@ -41,9 +41,9 @@ export default function CartSingleProduct({
         />
       </div>
       <div className='flex justify-center items-center'>
-        <Price>{subTotal}</Price>
+        <Price value={subTotal} />
       </div>
-      <div className='flex justify-center items-center'>
+      <div className='flex lg:static absolute justify-center items-center right-0 top-0'>
         <DeleteButton id={id} />
       </div>
     </article>

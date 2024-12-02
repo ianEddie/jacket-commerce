@@ -3,21 +3,25 @@ import ShineIcon from '../icons/shine-icon.astro';
 ---
 
 <section
-  class='relative h-[80dvh] flex flex-col justify-center items-center gap-y-5 font-primary'
+  class='relative lg:h-[80dvh] lg:py-0 py-20 flex flex-col justify-center items-center gap-y-5 font-primary'
 >
-  <h1 class='relative flex justify-center items-center'>
-    <b class='text-[9rem] z-10 text-yellow-300'>THE MAD</b>
-    <span class='absolute font-logo text-[16rem] z-0 -translate-x-4 text-black'
+  <h1 class='lg:relative flex flex-col justify-center items-center'>
+    <b
+      class='lg:text-[9rem] text-[4rem] max-w-[100%] text-center z-10 lg:text-yellow-300'
+      >THE MAD</b
+    >
+    <span
+      class='lg:absolute flex font-logo lg:text-[16rem] text-[6rem] text-center z-0 text-black'
       >JACKETS</span
     >
   </h1>
   <article class='flex gap-2 items-center'>
-    <ShineIcon class='rotate-180' />
+    <ShineIcon class='rotate-180 lg:size-[45px] size-[30px]' />
     <h2
-      class='text-[1.5rem] backdrop-blur-[1px] bg-gradient-to-b from-yellow-300/50  to-green-300 px-4 py-2 font-medium'
+      class='lg:text-[1.5rem] text-center backdrop-blur-[3px] bg-gradient-to-r from-yellow-200/50 to-green-200 px-4 py-2 font-medium'
     >
       2024 collection now available
     </h2>
-    <ShineIcon />
+    <ShineIcon class='lg:size-[45px] size-[30px]' />
   </article>
 </section>

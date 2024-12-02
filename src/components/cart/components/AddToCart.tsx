@@ -1,5 +1,4 @@
 import type { Product } from '@components/products/types';
-import { useCartStore } from '../store/cart-store';
 import { useActions } from '../hooks/useActions';
 
 interface Props {

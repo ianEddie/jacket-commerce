@@ -1,8 +1,17 @@
-export default function Price({ children }: any) {
+import NumberFlow from '@number-flow/react';
+
+interface Props {
+  value: number;
+}
+
+export default function Price({ value }: Props) {
   return (
-    <span className='flex items-center gap-1'>
-      <small className='text-teal-600 font-semibold'>$</small>
-      <strong>{children}</strong>
-    </span>
+    <div className='flex gap-1 items-center'>
+      <NumberFlow
+        value={value}
+        className='text-[14px] font-semibold '
+      />
+      <span className='text-[12px] font-medium text-green-700'>US$</span>
+    </div>
   );
 }

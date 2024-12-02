@@ -4,17 +4,18 @@ import ProductFooter from '../page/ProductFooter.astro';
 import ProductPicture from '../page/ProductPicture.astro';
 
 const { product } = Astro.props;
-const { name, imageFront, imageBack, origin, colors, price } = product;
+const { name, imageFront, imageBack, origin, colors, size } = product;
 ---
 
-<section class='h-screen w-full flex justify-center items-center'>
+<section class='h-screen w-full flex justify-center items-center lg:p-0 p-5'>
   <article
-    class='font-primary flex flex-col relative h-[80%] w-[60%] z-10 border-2 border-stone-800 bg-zinc-100'
+    class='font-primary flex flex-col relative lg:h-[80%] h-full lg:w-[60%] w-full z-10 border-2 border-stone-800 bg-zinc-100'
   >
     <ProductHeader
       name={name}
       origin={origin}
       colors={colors}
+      size={size}
     />
     <ProductPicture
       imageFront={imageFront}

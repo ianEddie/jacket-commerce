@@ -10,7 +10,7 @@ export default function IncrementButton({ id }: Props) {
   return (
     <button
       onClick={() => handleIncrement(id)}
-      className='bg-yellow-200 p-1  border border-stone-800 rounded-full flex items-center justify-center'
+      className='bg-yellow-200 p-1 border border-stone-800 rounded-full flex items-center justify-center'
     >
       <MoreIcon />
     </button>

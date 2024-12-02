@@ -17,7 +17,8 @@ export const PRODUCTS: Products = [
       { name: 'Black', hex: '#181818' },
       { name: 'Slate', hex: '#CBD5E1' },
       { name: 'Red', hex: '#D70918' }
-    ]
+    ],
+    size: '2XL'
   },
   {
     id: '02',
@@ -34,7 +35,8 @@ export const PRODUCTS: Products = [
       { name: 'Blue', hex: '#003ABD' },
       { name: 'Amber', hex: '#FCA702' },
       { name: 'Red', hex: '#D70918' }
-    ]
+    ],
+    size: 'XL'
   },
   {
     id: '03',
@@ -48,10 +50,11 @@ export const PRODUCTS: Products = [
     quantity: 0,
     origin: 'Denmark',
     colors: [
-      { name: 'Gray', hex: '#1B3644' },
-      { name: 'Orange', hex: '#FA4902' },
-      { name: 'Cyan', hex: '#0A9BDA' }
-    ]
+      { name: 'purple', hex: '#65499c' },
+      { name: 'red', hex: '#bf000a' },
+      { name: 'Cyan', hex: '#faae2a' }
+    ],
+    size: '3XL'
   },
   {
     id: '04',
@@ -68,7 +71,8 @@ export const PRODUCTS: Products = [
       { name: 'Gray', hex: '#1B3644' },
       { name: 'Orange', hex: '#FA4902' },
       { name: 'Cyan', hex: '#0A9BDA' }
-    ]
+    ],
+    size: 'XL'
   },
   {
     id: '05',
@@ -82,10 +86,11 @@ export const PRODUCTS: Products = [
     quantity: 0,
     origin: 'USA',
     colors: [
-      { name: 'Gray', hex: '#1B3644' },
-      { name: 'Orange', hex: '#FA4902' },
-      { name: 'Cyan', hex: '#0A9BDA' }
-    ]
+      { name: 'Blue', hex: '#182953' },
+      { name: 'Red', hex: '#df0027' },
+      { name: 'Black', hex: '#181818' }
+    ],
+    size: '2XL'
   },
   {
     id: '06',
@@ -99,10 +104,11 @@ export const PRODUCTS: Products = [
     quantity: 0,
     origin: 'Canada',
     colors: [
-      { name: 'Gray', hex: '#1B3644' },
-      { name: 'Orange', hex: '#FA4902' },
-      { name: 'Cyan', hex: '#0A9BDA' }
-    ]
+      { name: 'Gray', hex: '#181818' },
+      { name: 'Amber', hex: '#d18a1f' },
+      { name: 'Blue', hex: '#272f5c' }
+    ],
+    size: '4XL'
   },
   {
     id: '07',
@@ -116,10 +122,11 @@ export const PRODUCTS: Products = [
     quantity: 0,
     origin: 'NYC',
     colors: [
-      { name: 'Red', hex: '#601417' },
-      { name: 'Violet', hex: '#77145F' },
+      { name: 'Blue', hex: '#203578' },
+      { name: 'Red', hex: '#df0027' },
       { name: 'Yellow', hex: '#FACC15' }
-    ]
+    ],
+    size: '2XL'
   },
   {
     id: '08',
@@ -136,6 +143,7 @@ export const PRODUCTS: Products = [
       { name: 'Red', hex: '#601417' },
       { name: 'Violet', hex: '#77145F' },
       { name: 'Yellow', hex: '#FACC15' }
-    ]
+    ],
+    size: '3XL'
   }
 ];

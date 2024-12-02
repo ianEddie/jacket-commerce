@@ -9,7 +9,8 @@
       "@products/*": ["src/components/products/*"],
       "@header/*": ["src/components/header/*"],
       "@hero/*": ["src/components/hero/*"],
-      "@checkout/*": ["src/components/checkout/*"]
+      "@checkout/*": ["src/components/checkout/*"],
+      "@ui/*": ["src/components/UI/*"]
     },
     "jsx": "react-jsx",
     "jsxImportSource": "react"
