@@ -7,7 +7,7 @@ export default function Cart() {
   const { cartValue } = useActions();
   const emptyCart = cartValue < 1;
   return (
-    <main className='h-screen lg:p-10 p-5 gap-10 flex lg:flex-row flex-col justify-center items-center'>
+    <main className='h-[100dvh] lg:p-10 p-5 lg:gap-10 gap-5 flex lg:flex-row flex-col justify-center items-center'>
       {emptyCart ? (
         <EmptyCart />
       ) : (

@@ -9,7 +9,7 @@ export default function CheckoutProductItem({ product }: Props) {
   const { name, price } = product;
   return (
     <li className='w-full flex justify-between'>
-      <span className='text-sm font-medium'>{name}</span>
+      <span className='lg:text-sm text-[12px] font-medium'>{name}</span>
       <Price value={price} />
     </li>
   );

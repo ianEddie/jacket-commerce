@@ -9,7 +9,7 @@ export default function Price({ value }: Props) {
     <div className='flex gap-1 items-center'>
       <NumberFlow
         value={value}
-        className='text-[14px] font-semibold '
+        className='lg:text-[14px] text-[12px] font-semibold '
       />
       <span className='text-[12px] font-medium text-green-700'>US$</span>
     </div>
